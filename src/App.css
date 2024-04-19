@@ -1,0 +1,68 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 234, 234);
+  }
+  
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .numbers div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .numbers .active {
+    background-color: #007bff;
+  }
+  
+  .message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .numbers {
+      width: 100%;
+    }
+  
+    .buttons {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .buttons button {
+      margin-top: 10px;
+    }
+  }
+  
